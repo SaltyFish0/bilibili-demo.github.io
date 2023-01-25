@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>咸鱼的vCard</title>
+		<link rel="stylesheet" href="./css/main.css">
+	</head>
+	<body>
+		<div id="app">
+			<!-- 按钮 -->
+			<header @click="logoClick()">
+				<!-- 初始界面引导线条 -->
+				<div class="after-d"></div>
+
+				<!-- 导航界面 -->
+				<!-- 定义两个值，用来修改类 -->
+				<nav :class="{AnimationNavo:condition,AnimationNavoo:condition1}">
+					<!-- 当行界面线条 -->
+					<div class="after-l"></div>
+
+				</nav>
+
+			</header>
+
+		</div>
+		<div id="pc">
+			Vue + Less + Css_media
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+		<script>
+			const app = new Vue({
+				el: '#app',
+				data: {
+					condition: false,
+					condition1: true
+				},
+				computed: {
+
+				},
+				methods: {
+					// 当点击按钮时进行取反操作
+					logoClick() {
+						this.condition = !this.condition
+					}
+				}
+			})
+		</script>
+
+	</body>
+</html>
