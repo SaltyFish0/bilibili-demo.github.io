@@ -1,0 +1,88 @@
+@keyframes animate {
+  0% {
+    filter: opacity(0);
+    transform: translateY(-10em);
+  }
+  25%,
+  75% {
+    filter: opacity(1);
+    transform: translateY(0);
+  }
+  100% {
+    filter: opacity(0);
+    transform: translateY(10em);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+  user-select: none;
+}
+html,
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(white, lightpink);
+}
+html .heart,
+body .heart {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: repeat(13, 1fr);
+}
+html .heart *,
+body .heart * {
+  width: 1em;
+  height: 1em;
+  font-size: 2em;
+}
+html .heart dot,
+body .heart dot {
+  background: red;
+  animation: animate 5s infinite ease-out;
+}
+html .heart dot:nth-child(2n),
+body .heart dot:nth-child(2n) {
+  animation-delay: 0.2s;
+}
+html .heart dot:nth-child(3n),
+body .heart dot:nth-child(3n) {
+  animation-delay: 0.3s;
+}
+html .heart dot:nth-child(4n),
+body .heart dot:nth-child(4n) {
+  animation-delay: 0.4s;
+}
+html .heart dot:nth-child(5n),
+body .heart dot:nth-child(5n) {
+  animation-delay: 0.5s;
+}
+html .heart dot:nth-child(6n),
+body .heart dot:nth-child(6n) {
+  animation-delay: 0.6s;
+}
+html .heart dot:nth-child(7n),
+body .heart dot:nth-child(7n) {
+  animation-delay: 0.7s;
+}
+html .heart dot:nth-child(8n),
+body .heart dot:nth-child(8n) {
+  animation-delay: 0.8s;
+}
+html .heart dot:nth-child(9n),
+body .heart dot:nth-child(9n) {
+  animation-delay: 0.9s;
+}
+html .heart dot:nth-child(10n),
+body .heart dot:nth-child(10n) {
+  animation-delay: 1s;
+}
+html .heart dot:nth-child(11n),
+body .heart dot:nth-child(11n) {
+  animation-delay: 1.1s;
+}
