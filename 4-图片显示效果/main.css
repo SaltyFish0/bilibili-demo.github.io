@@ -1,3 +1,6 @@
+.type1 {
+  background: #05883c;
+}
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #05883c;
 }
 body .container {
   border-radius: 0.3em;
