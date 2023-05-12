@@ -1,39 +1,51 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title></title>
+		<meta charset="UTF-8">
+		<title>表单示例</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				text-decoration: none;
+				color:#000;
+				user-select: none;
+			}
+		</style>
 	</head>
+
 	<body>
-		<form action="">
-			<label>Text input:</label>
-			<input
-				type="text"
-				name="name"
-				value=""
-			>
+		<h2>表单示例</h2>
+		<form>
+			<label for="content">内容：</label><br>
+			<textarea id="content" name="content" cols="40" rows="5"></textarea><br>
+
+			<label for="question_a">A选项</label>
+			<input type="text" id="question_a" name="question" ><br>
+
+			<label for="question_b">B选项</label>
+			<input type="text" id="question_b" name="question"><br>
+
+			<label for="question_c">C选项</label>
+			<input type="text" id="question_c" name="question"><br>
+
+			<label for="question_d">D选项</label>
+			<input type="text" id="question_d" name="question"><br>
+
+			<h3>参考答案</h3>
+			<input type="radio" id="answer_a" name="gender" value="answer_a">
+			<label for="answer_a">A</label>
 			
-			<br>
-			<input
-				type="text"
-				name="a"
-				value=""
-			>
-			<input
-				type="text"
-				name="b"
-				value=""
-			>
-			<input
-				type="text"
-				name="c"
-				value=""
-			>
-			<input
-				type="text"
-				name="d"
-				value=""
-			>
+			<input type="radio" id="answer_b" name="gender" value="answer_b">
+			<label for="answer_b">B</label>
+			
+			<input type="radio" id="answer_c" name="gender" value="answer_c">
+			<label for="answer_c">C</label>
+			
+			<input type="radio" id="answer_d" name="gender" value="answer_d">
+			<label for="answer_d">D</label>
 		</form>
 	</body>
+
 </html>
