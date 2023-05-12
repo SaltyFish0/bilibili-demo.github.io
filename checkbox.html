@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>checkbox</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				text-decoration: none;
+				color: #000;
+				user-select: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h2>表单示例</h2>
+		<form id="my-form">
+			<label for="content">内容：</label><br>
+			<textarea id="content" name="content" cols="40" rows="5"></textarea><br>
+
+			<label for="question_a">A选项</label>
+			<input type="text" id="question_a" name="question_a"><br>
+
+			<label for="question_b">B选项</label>
+			<input type="text" id="question_b" name="question_b"><br>
+
+			<label for="question_c">C选项</label>
+			<input type="text" id="question_c" name="question_c"><br>
+
+			<label for="question_d">D选项</label>
+			<input type="text" id="question_d" name="question_d"><br>
+
+			<h3>参考答案</h3>
+			<input type="checkbox" id="answer_a" name="gender" value="answer_a">
+			<label for="answer_a">A</label>
+
+			<input type="checkbox" id="answer_b" name="gender" value="answer_b">
+			<label for="answer_b">B</label>
+
+			<input type="checkbox" id="answer_c" name="gender" value="answer_c">
+			<label for="answer_c">C</label>
+
+			<input type="checkbox" id="answer_d" name="gender" value="answer_d">
+			<label for="answer_d">D</label>
+			<input type="submit" value="Submit">
+			<input type="reset" value="重置" id="remove">
+		</form>
+		<script>
+			var form = document.getElementById('my-form');
+			form.addEventListener('submit', function(event) {
+				event.preventDefault(); // 防止表单默认提交
+				var formData = new FormData(form); // 获取表单数据
+				console.log(formData); // 打印表单数据到控制台
+			});
+		</script>
+	</body>
+
+</html>
